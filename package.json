@@ -1,0 +1,11 @@
+{
+  "name": "examennodemongo",
+  "version": "1.0.0",
+  "description": "examen de nodejs y mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Victor Daniel Aguirre Gil <ag.vic.da@gmail.com>",
+  "license": "ISC"
+}
