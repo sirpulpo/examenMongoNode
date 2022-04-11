@@ -78,11 +78,13 @@ function MaxProfit(pricesAsString) {
   for (let index = 0; index < arrayPrecios.length - 1; index++) {
 		let ganancia = 0;
     const compro = arrayPrecios[index];
-		const vendo = arrayPrecios[index + 1];
-		ganancia = vendo - compro;
-		if (ganancia > 0) {
-			if (ganancia > max) {
-				max = ganancia;
+		for (let j = index; j < arrayPrecios.length - 1; j++) {
+			const vendo = arrayPrecios[j];
+			ganancia = vendo - compro;
+			if (ganancia > 0) {
+				if (ganancia > max) {
+					max = ganancia;
+				}
 			}
 		}
   }
